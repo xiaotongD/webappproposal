@@ -137,13 +137,13 @@
   .next-track:hover{
     opacity: 1.0;
   }
-  .slider_container{
+  .sliderbox{
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .seek_slider,
-  .volume_slider{
+  .seekslider,
+  .volslider{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -153,8 +153,8 @@
     transition: opacity .2s;
 
   }
-  .seek_slider::-webkit-slider-thumb,
-  .volume_slider::-webkit-slider-thumb{
+  .seekslider::-webkit-slider-thumb,
+  .volslider::-webkit-slider-thumb{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -166,15 +166,15 @@
     border-radius: 10px;
 
   }
-  .seek_slider:hover,
-  .volume_slider:hover{
+  .seekslider:hover,
+  .volslider:hover{
     opacity: 1.0;
   }
-  .seek_slider{
+  .seekslider{
     width: 60%;
   }
-  .volume_slider{
-    width: 30%;
+  .volslider{
+    width: 40%;
   }
   .timenow,
   .totaltime{
@@ -188,6 +188,7 @@
     padding: 8px;
     margin-top: 1px;
   }
+  
   i,
   i.fa-pause-circle,
   i.fa-step-forward,
@@ -200,10 +201,6 @@
     font-size: 50px;
   }
 
-  .randomActive{
-    color: black;
-
-  }
   .rotate{
     animation: rotation 10s infinite linear;
   }
@@ -214,21 +211,6 @@
     to{
         transform: rotate(359deg);
     }
-  }
-  .loader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-
-  }
-  .loader .stroke{
-    background: white;
-    width: 10px;
-    border-radius: 50px;
-    margin: 0px 5px;
-    animation: animate 1.4s linear infinite;
-
   }
 
 @font-face {
@@ -253,4 +235,4 @@
 @font-face{
     font-family: 'Out';
     src:url("font/Outfit-VariableFont_wght.ttf");
-}
+} 
