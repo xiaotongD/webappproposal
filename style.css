@@ -1,0 +1,452 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.list{
+    position:fixed;
+    top:0;
+    left:0;
+    padding: 50px 100px;
+    width:flex;
+    justify-items: center; 
+}
+.logo{
+    position: fixed;
+    top:0;
+    left:10px;
+    font-size:40px;
+    font-family:'Per';
+    color:white;
+   }
+.menu{
+    position: fixed;
+    top:90px;
+    left:0.5%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    list-style: none;
+}
+.menu li{
+    position:relative;
+}
+
+.menu li:hover{
+    background-color: orange;
+    border-radius: 1rem;
+}
+.menu a{
+    margin:0 10px;
+    font-size: 25px;
+    font-family:'Pan';
+    color:white;
+    text-decoration: none;
+}
+.menu a:hover{
+    color:black;
+    font-weight: 900;
+}
+.bar{
+    padding: 65px 100px;
+    background-color:rgb(89, 30, 165);
+}
+.task {
+    position:fixed;
+    left: 0;
+    right: 0;
+    font-family: "Pay";
+    color: rgb(72, 13, 129);
+    font-size: 50px;
+    text-align: center;
+    padding-top: 10px;
+} 
+/*task list*/ 
+table{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px rgb(204, 204, 204);
+    font-family: 'Pan';
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+} 
+thead{
+    box-shadow: 0 1px 5px rgb(192, 192, 192);    
+}
+th{
+    padding: 5px 5px;
+    font-weight: 900;
+}
+td{
+    padding: 10px 5px;
+}
+tr:nth-child(even){
+    background-color: rgb(241, 235, 255);
+}
+.option{
+    border: none;
+    border-radius: 10px;
+    box-shadow:inset 0 1px 5px rgb(204, 204, 204);
+}
+.hours{
+    border:none;
+    background-color:transparent;
+}
+/*kanban board*/
+.container{
+    width: 50%;
+    min-width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+.kanban{
+    margin-top: 100px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Pan';
+  }
+.block{
+    padding: 0.8rem;
+    width: 10%;
+    min-width: 12rem;
+    border-radius: 1rem;
+    font-size: larger;
+    font-weight: 900;
+}
+#a{
+    background-color: rgb(255, 184, 0);
+}
+.tasks {
+    background-color: white;
+    margin: 0.5rem 0rem 0.3rem 0rem;
+    padding: 0.4rem 0.2rem 0.4rem 2rem;
+    box-shadow: inset 0 3px 5px rgb(204, 204, 204);
+    border-radius: 1rem;
+    font-size:smaller;
+    font-weight: 500;
+  } 
+#tbu {
+    font-family: 'Pan';
+    font-weight: 700;
+    position:relative;
+    top:65px;
+    margin: 0.2rem 0rem 0.1rem 0rem;
+    background-color: white;
+    border-radius: 0.2rem;
+    width: 100%;
+    padding: 0.2rem 0.6rem;
+    border:none;
+    border-radius: 20px;
+    box-shadow: 0 3px 5px rgb(204, 204, 204);
+    font-size: 20px;
+  }
+/*stopwatch*/
+.timer {
+    position:fixed;
+    left: 0;
+    right: 0;
+    font-family: "Pay";
+    color: rgb(252, 109, 171);
+    font-size: 50px;
+    text-align: center;
+    padding-top: 10px;
+} 
+#stopwatch{
+    font-size: 40px;
+    font-family:'Pat';
+    text-align:center;
+    width: 330px;
+    height:250px;
+    margin:110px auto;
+    padding:60px;
+    background: white;
+    box-shadow: 15px 15px 30px rgb(236, 236, 236),-5px -5px 10px rgb(236, 236, 236);
+    border-radius:40px;
+    background: white;
+    box-shadow:5px -5px 10px rgb(236, 236, 236),-5px 5px 10px rgb(236, 236, 236);
+    }
+#stopwatch button{
+    font-family: 'Pan';
+    font-size: 18px;
+    border:none;
+    color:white;
+    width: 50px;
+    height:50px;
+    justify-content: space-between;
+    transition:0.2s;
+    border-radius:100px;    
+    }
+#start{
+    background-color: rgb(74, 205, 148);
+}
+#stop{
+    background-color: rgb(245, 124, 108);
+}
+#reset{
+    background-color: rgb(89, 167, 239);
+}
+#stopwatch button:hover{
+    background:rgb(192, 192, 192);
+    color:black;
+    border-radius:35px;
+    transition: 0.2s;
+    }
+    
+/*pomodoro timer*/
+.clock{ 
+    text-align: center;
+    justify-content: space-between;
+    font-family: 'Pat';
+    font-size: 70px;
+    color: white;
+}
+.pmin{
+    position:fixed;
+    left: 50%; 
+    margin-left:-70px;
+    margin-top: 35px;
+}
+.dd{
+    position:fixed;
+    left: 50%;  
+    margin-top: 35px;
+}
+.psec{
+    position:fixed;
+    left: 50%; 
+    margin-left:25px;
+    margin-top: 35px;
+}
+.potato{
+    position:fixed;
+    left: 50%;  
+    width:300px;
+    height: 280px;
+    margin-left: -140px;
+    margin-top: -75px;
+}
+.pbtn{
+    position:relative;
+    left: 50%;
+    max-width: 300px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Pan'; 
+    margin-left: -140px;
+    margin-top: 320px; 
+    }
+.pstart{
+    font-family: 'Pan';
+    font-size: 18px;
+    border:none;
+    color:white;
+    width: 60px;
+    height:60px;
+    justify-content: space-between;
+    transition:0.2s;
+    border-radius:100px;
+    background-color: rgb(0, 197, 161);
+}
+.pstop{
+    font-family: 'Pan';
+    font-size: 18px;
+    border:none;
+    color:white;
+    width: 60px;
+    height:60px;
+    justify-content: space-between;
+    transition:0.2s;
+    border-radius:100px;
+    background-color: rgb(238, 103, 85);
+}
+.preset{
+    font-family: 'Pan';
+    font-size: 18px;
+    border:none;
+    color:white;
+    width: 60px;
+    height:60px;
+    justify-content: space-between;
+    transition:0.2s;
+    border-radius:100px;
+    background-color: rgb(54, 156, 250); 
+}
+.pstart:hover{
+    background:rgb(0, 143, 122);
+    color:black;
+    border-radius:35px;
+    transition: 0.2s;
+    }
+.pstop:hover{
+    background:rgb(190, 63, 47);
+    color:black;
+    border-radius:35px;
+    transition: 0.2s;
+    }
+.preset:hover{
+        background:rgb(43, 124, 199);
+        color:black;
+        border-radius:35px;
+        transition: 0.2s;
+    }
+form{
+    position:fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 10px;
+    margin: -10px;
+       
+}
+#on,
+#off,
+#break{
+    font-family: "Pan";
+    width: 50px;
+    border:none;
+    background-color: rgb(229, 229, 229);
+    border-radius: 10px;
+    text-align: center;
+}
+#save{
+    font-family: "Pan";
+    border: none;
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: orange;
+}
+.dic{
+    position:fixed;
+    left: 0;
+    right: 0;
+    font-family: "Pay";
+    color: rgb(255, 121, 0);
+    font-size: 50px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*dictionary*/
+.dicarea {
+    background-color: rgb(255,160,75);
+    font-size: 20px;
+    text-align:center;
+    width: 330px;
+    height:380px;
+    margin:110px auto;
+    padding:60px;
+    border-radius:20px;
+}
+.searchbox {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -40px;
+    margin-top: -40px;;
+}
+.searchbox input {
+    padding: 5px;
+    width: 65%;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 16px;
+}
+.searchbox button {
+    font-family: "Out";
+    height: 30px;
+    width: 50px;
+    font-weight: 600;
+    background-color: rgb(255, 230, 0);
+    border: none;
+    border-radius: 10px;
+    margin-right: 60px;
+}
+.result {
+    position: relative;
+    background-color: white;
+    width: 290px;
+    height: 290px;
+    border-radius: 10px;
+    margin-left: -41px;
+    margin-top: 19px;
+}
+.result h3 {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 13px;
+    text-align: left;
+
+
+}
+.result button {
+    background-color: transparent;
+    color: rgb(89, 0, 167);
+    border: none;
+    font-size: 15px;
+    margin-left: -230px;
+    margin-top: 14px;
+    
+}
+.result .details {
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(161, 100, 1);
+    margin-top: -25px;
+    padding-left: 50px;
+    font-size: 13px;
+    text-align: left;
+}
+.word-meaning {
+    font-family: "Out";
+    color: gray;
+    font-size: 18px;
+    margin-top: 25px;
+}
+.word-example {
+    color: gray;
+    font-style: italic;
+    border-left: 5px solid #ae9cff;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.error {
+    font-family: "Out";
+    text-align: right;
+    color: rgb(192, 192, 192);
+    margin-right: 15px;
+
+}
+
+@font-face {
+    font-family:'Per';
+    src:url("font/PermanentMarker.ttf");
+   
+}
+@font-face{
+    font-family:'Pan';
+    src:url("font/Pangolin-Regular.ttf");
+}
+
+@font-face{
+    font-family: 'Pay';
+    src:url("font/PaytoneOne.ttf");
+}
+
+@font-face{
+    font-family: 'Pat';
+    src:url("font/PatrickHandSC-Regular.ttf");
+}
+@font-face{
+    font-family: 'Out';
+    src:url("font/Outfit-VariableFont_wght.ttf");
+}

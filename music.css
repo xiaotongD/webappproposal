@@ -1,0 +1,256 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.list{
+    position:fixed;
+    top:0;
+    left:0;
+    padding: 50px 100px;
+    width:flex;
+    justify-items: center; 
+}
+.logo{
+    position: fixed;
+    top:0;
+    left:10px;
+    font-size:40px;
+    font-family:'Per';
+    color:white;
+   }
+.menu{
+    position: fixed;
+    top:90px;
+    left:0.5%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    list-style: none;
+}
+.menu li{
+    position:relative;
+}
+
+.menu li:hover{
+    background-color: orange;
+    border-radius: 1rem;
+}
+.menu a{
+    margin:0 10px;
+    font-size: 25px;
+    font-family:'Pan';
+    color:white;
+    text-decoration: none;
+}
+.menu a:hover{
+    color:black;
+    font-weight: 900;
+}
+.bar{
+    padding: 65px 100px;
+    background-color:rgb(89, 30, 165);
+}
+.music{ 
+    color:rgb(255,168,0);
+    position:fixed;
+    left: 0;
+    right: 0;
+    font-family: "Pay";
+    font-size: 50px;
+    text-align: center;
+    padding-top: 10px;
+}
+/*Music player*/
+.player{
+    padding-top: 160px;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .wrapper{
+    border: 1px solid transparent;
+    
+      border-radius: 20px;
+      box-shadow:rgb(160, 160, 160) 0px 20px 40px, rgb(150, 150, 150) 0px 15px 10px;
+  
+  }
+  .details{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  
+  }
+  .track-art{
+    margin: 25px;
+    height: 240px;
+    width: 240px;
+    border: 2px solid #fff;
+    background-position: center;
+    background-size: cover;   
+    box-shadow: 0px 5px 5px rgb(192,192,192);
+    border-radius: 200px;
+  
+  }
+  .munow{
+    font-family: 'Out';
+    font-size: 14px;
+    padding-top: 5px;
+  }
+  .track-name{
+    font-family: 'Out';
+    font-size: 15px;
+
+  }
+  .track-artist{
+    font-family: 'Out';
+    margin-top: 5px;
+    font-size: 13px;
+
+  }
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .active{
+    color: black;
+  }
+  .repeat-track,
+  .random-track,
+  .playpause-track,
+  .prev-track,
+  .next-track{
+    padding: 25px;
+    opacity: 0.8;
+    transition: opacity .2s;
+  }
+  .repeat-track:hover,
+  .random-track:hover,
+  .playpause-track:hover,
+  .prev-track:hover,
+  .next-track:hover{
+    opacity: 1.0;
+  }
+  .slider_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .seek_slider,
+  .volume_slider{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 4px;
+    background: #FFB526;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+
+  }
+  .seek_slider::-webkit-slider-thumb,
+  .volume_slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    background: white;
+    border: 3px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+
+  }
+  .seek_slider:hover,
+  .volume_slider:hover{
+    opacity: 1.0;
+  }
+  .seek_slider{
+    width: 60%;
+  }
+  .volume_slider{
+    width: 30%;
+  }
+  .timenow,
+  .totaltime{
+    font-family: 'Out';
+    font-size: 12px;
+    padding: 10px;
+
+  }
+  i.fa-volume-down,
+  i.fa-volume-up{
+    padding: 8px;
+    margin-top: 1px;
+  }
+  i,
+  i.fa-pause-circle,
+  i.fa-step-forward,
+  i.fa-step-backward{
+    margin-top: -10px;
+    font-size: 40px;
+  }
+
+  i.fa-play-circle{
+    font-size: 50px;
+  }
+
+  .randomActive{
+    color: black;
+
+  }
+  .rotate{
+    animation: rotation 10s infinite linear;
+  }
+  @keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+  }
+  .loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+
+  }
+  .loader .stroke{
+    background: white;
+    width: 10px;
+    border-radius: 50px;
+    margin: 0px 5px;
+    animation: animate 1.4s linear infinite;
+
+  }
+
+@font-face {
+    font-family:'Per';
+    src:url("font/PermanentMarker.ttf");
+   
+}
+@font-face{
+    font-family:'Pan';
+    src:url("font/Pangolin-Regular.ttf");
+}
+
+@font-face{
+    font-family: 'Pay';
+    src:url("font/PaytoneOne.ttf");
+}
+
+@font-face{
+    font-family: 'Pat';
+    src:url("font/PatrickHandSC-Regular.ttf");
+}
+@font-face{
+    font-family: 'Out';
+    src:url("font/Outfit-VariableFont_wght.ttf");
+}

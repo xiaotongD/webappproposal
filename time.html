@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>STARDY</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" async defer></script>
+    </head>
+    <body>
+      <div class="list">   
+        <span class="logo">STARDY</span>
+        <ul class="menu">
+        <li><a href="index.html">Task</a></li>
+        <li><a href="time.html">Time</a></li>
+        <li><a href="dictionary.html">Content</a></li>
+        <li><a href="music.html">Music</a></li>
+       </ul>
+       </div>
+       <div class="bar"></div>
+       <div><h2 class="timer">Timer</h2></div>      
+
+       <div id="stopwatch">
+               <div class="time">
+                   <span >00</span>
+                   <span >00</span>
+                   <span >00</span>
+           </div>
+           <button id="start" onclick="start();">Start</button>
+           <button id="stop" onclick="stop();">Stop</button>
+           <button id="reset" onclick="reset();">Reset</button>
+     </div>
+           <img class= "potato"src="potato.png"></img>
+           <figure class="clock">
+            <div class="pmin">00</div>
+            <div class="dd">:</div>
+            <div class="psec">00</div>
+          </figure>
+          
+          <div class="pbtn">
+            <button class="pstart">Start</button>
+            <button class="pstop">Stop</button>
+            <button class="preset">Reset</button>
+          </div>
+      
+          <form action=".">
+            <input type="number" value="25" id="on" />
+            <input type="number" value="5" id="off" />
+            <input type="number" value="30" id="break" />
+            <button type="submit" id="save">Save</button>
+          </form>     
+          <svg>
+            <circle class="progress"/>
+          </svg>      
+    </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+    <title>STARDY</title>
+  <link href="style.css"rel="stylesheet"type="text/css">
+  <script src="script.js"></script>
+  
+
+ </head>
+ 
+<body>
+ <div class="list">   
+  <span class="logo">STARDY</span>
+  <ul class="menu">
+  <li><a href="index.html">Task</a></li>
+  <li><a href="time.html">Time</a></li>
+  <li><a href="dictionary.html">Content</a></li>
+  <li><a href="music.html">Music</a></li>
+ </ul>
+ </div>
+ <div class="bar"></div>
+
+ <div><h2 class="task">Task List</h2></div>
+<!--Kanban Board-->
+ <div>
+  <div class="container">
+    <div class="kanban">
+      <div class="block" id="a" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div contenteditable="true">To Do</div>
+         <div class="tasks" id="1" contenteditable="true" draggable="true" ondragstart="drag(event)">
+           <span>Task 1</span></div>
+          <div class="tasks" id="2" contenteditable="true" draggable="true" ondragstart="drag(event)">
+           <span>Task 2</span></div>
+            <div class="tasks" id="3" contenteditable="true" draggable="true" ondragstart="drag(event)">
+          <span>Task 3</span></div> 
+        </div>
+        <div class="block" id="a" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <div contenteditable="true">In Progress</div>
+        <div class="tasks" id="4" contenteditable="true" draggable="true" ondragstart="drag(event)">
+          <span>Task 4</span></div>
+          <div class="tasks" id="5" contenteditable="true" draggable="true" ondragstart="drag(event)">
+            <span>Task 5</span></div>
+        </div>
+        <div class="block" id="a" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <div contenteditable="true">Done</div>
+        <div class="tasks" id="6" contenteditable="true" draggable="true" ondragstart="drag(event)">
+            <span>Task 6</span></div>  
+    </div>
+    <div class="tbutton">
+      <button onclick ="add()"id="tbu">+</button>
+      </div>
+  </div>
+ </div>
+
+<!--Task List-->
+<div>
+ <table>
+   <thead>
+     <tr>
+       <th>TASK</th>
+       <th>DUE DATE</th>
+       <th>PRIORITY</th>
+       <th>TIME to COMPLETE</th>
+       <th>STATUS</th>
+     </tr>
+   </thead>
+   <tbody>
+     <div>
+     <tr>
+       <td contenteditable="true">Task 1</td>
+       <td><input class="option" type="date"></td>
+       <td><select class="option" id="group" value="1">
+        <option value="1">Low</option>
+        <option value="2">Med</option>
+        <option value="3">High</option>
+    </select></td>
+       <td><input class="hours" type="number"min="0.5"max="50">hrs</td>
+       <td><select class="option" id="group" value="1">
+        <option value="1">Not Done</option>
+        <option value="2">Done</option>
+      </select></td>
+     </tr> 
+     <tr>
+      <td contenteditable="true">Task 2</td>
+      <td><input class="option" type="date"></td>
+      <td><select class="option" id="group" value="1">
+        <option value="1">Low</option>
+        <option value="2">Med</option>
+        <option value="3">High</option>
+    </select></td>
+      <td><input class="hours" type="number"min="0.5"max="50">hrs</td>
+      <td><select class="option" id="group" value="1">
+        <option value="1">Done</option>
+        <option value="2">Not Done</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td contenteditable="true">Task 3</td>
+      <td><input class="option" type="date"></td>
+      <td><select class="option" id="group" value="1">
+        <option value="1">Low</option>
+        <option value="2">Med</option>
+        <option value="3">High</option>
+    </select></td>
+      <td><input class="hours" type="number"min="0.5"max="50">hrs</td>
+      <td><select class="option" id="group" value="1">
+        <option value="1">Done</option>
+        <option value="2">Not Done</option>
+      </select></td>
+    </tr> 
+    <tr>
+      <td contenteditable="true">Task 4</td>
+      <td><input class="option" type="date"></td>
+      <td><select class="option" id="group" value="1">
+        <option value="1">Low</option>
+        <option value="2">Med</option>
+        <option value="3">High</option>
+    </select></td>
+      <td><input class="hours" type="number"min="0.5"max="50">hrs</td>
+      <td><select class="option" id="group" value="1">
+        <option value="1">Done</option>
+        <option value="2">Not Done</option>
+      </select></td>
+    </tr> 
+    <tr>
+      <td contenteditable="true">Task 5</td>
+      <td><input class="option" type="date"></td>
+      <td><select class="option" id="group" value="1">
+        <option value="1">Low</option>
+        <option value="2">Med</option>
+        <option value="3">High</option>
+    </select></td>
+      <td><input class="hours" type="number"min="0.5"max="50">hrs</td>
+      <td><select class="option" id="group" value="1">
+        <option value="1">Done</option>
+        <option value="2">Not Done</option>
+      </select></td>
+    </tr> 
+    <tr>
+      <td contenteditable="true">Task 6</td>
+      <td><input class="option" type="date"></td>
+      <td><select class="option" id="group" value="1">
+        <option value="1">Low</option>
+        <option value="2">Med</option>
+        <option value="3">High</option>
+    </select></td>
+      <td><input class="hours" type="number"min="0.5"max="50">hrs</td>
+      <td><select class="option" id="group" value="1">
+        <option value="1">Done</option>
+        <option value="2">Not Done</option>
+      </select></td>
+    </tr> 
+    </div>
+   </tbody>
+ </table>
+ </div>
+ </div>
+</body>
+</html>
