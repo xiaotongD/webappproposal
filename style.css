@@ -3,7 +3,7 @@
     padding:0;
     box-sizing:border-box;
 }
-
+/*Web heading & menu*/
 .list{
     position:fixed;
     top:0;
@@ -305,7 +305,6 @@ form{
     text-align: center;
     padding-top: 10px;
     margin: -10px;
-       
 }
 #on,
 #off,
