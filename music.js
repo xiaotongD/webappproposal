@@ -7,8 +7,8 @@ let playpause_btn = document.querySelector('.playpause-track');
 let next_btn = document.querySelector('.next-track');
 let prev_btn = document.querySelector('.prev-track');
 
-let seek_slider = document.querySelector('.seek_slider');
-let volume_slider = document.querySelector('.volume_slider');
+let seekslider = document.querySelector('.seekslider');
+let volslider = document.querySelector('.volslider');
 let timenow = document.querySelector('.timenow');
 let totaltime = document.querySelector('.totaltime');
 let randomIcon = document.querySelector('.fa-random');
@@ -70,7 +70,7 @@ function loadTrack(track_index){
 function reset(){
     timenow.textContent = "00:00";
     totaltime.textContent = "00:00";
-    seek_slider.value = 0;
+    seekslider.value = 0;
 }
 function randomTrack(){
     isRandom ? pauseRandom() : playRandom();
@@ -125,17 +125,17 @@ function prevTrack(){
     playTrack();
 }
 function seekTo(){
-    let seekto = curr_track.duration * (seek_slider.value / 100);
+    let seekto = curr_track.duration * (seekslider.value / 100);
     curr_track.currentTime = seekto;
 }
 function setVolume(){
-    curr_track.volume = volume_slider.value / 100;
+    curr_track.volume = volslider.value / 100;
 }
 function setUpdate(){
     let seekPosition = 0;
     if(!isNaN(curr_track.duration)){
         seekPosition = curr_track.currentTime * (100 / curr_track.duration);
-        seek_slider.value = seekPosition;
+        seekslider.value = seekPosition;
 
         let currentMinutes = Math.floor(curr_track.currentTime / 60);
         let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
